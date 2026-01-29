@@ -41,6 +41,8 @@ Before final response, do a review pass and list issues by severity:
 - Never log secrets
 - Add timeouts, retries, and idempotency for API automations
 - Fail safe (no silent data loss)
+- Not allowed to change a well written code. Identify the problem and fix the problem
+- Not allowed to rewrite the whole code for the sake of tiny changes
 
 ## Artifact persistence (mandatory)
 Any brainstorm, plan, review, or finish output must be written to disk under:
