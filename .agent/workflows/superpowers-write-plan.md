@@ -13,7 +13,8 @@ If `{{input}}` is empty or missing, ask the user to restate the task in one sent
 ## Rules
 - DO NOT edit code.
 - You may read files to understand context, but produce the plan and then stop.
-- Plan steps must be small (2–10 minutes each) and include verification commands.
+- Plan steps must be small (2–10 minutes each). Include checklist and verification commands.
+- You should write the plan as detail as possible and not skipping a single smallest detail.
 
 ## Output format (use exactly)
 ## Goal
