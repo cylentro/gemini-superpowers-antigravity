@@ -209,5 +209,6 @@ After all steps complete:
 2. Generate final summary with time savings metrics
 3. List all changed files
 4. Provide any manual validation steps
+5. Update the plan checklist
 
 Stop after completing the finish step.
