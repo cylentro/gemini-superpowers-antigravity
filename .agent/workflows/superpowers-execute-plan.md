@@ -80,5 +80,6 @@ At the end:
    - Follow-ups (if any)
    - Manual validation steps (if applicable)
 3) Confirm the artifacts exist by listing `artifacts/superpowers/`.
+4) Update the plan checklist.
 
 Stop after completing the finish step.
