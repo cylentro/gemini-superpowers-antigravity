@@ -25,7 +25,7 @@ This workflow executes an approved plan by identifying independent steps and run
 ## Preconditions (do not skip)
 
 1. The user must have replied **APPROVED** to a written plan
-2. The approved plan must exist at: `artifacts/superpowers/plan.md`
+2. The approved plan must exist at: `artifacts/superpowers/[topic]-plan.md`
 
 If `artifacts/superpowers/plan.md` does not exist:
 - Stop immediately
@@ -196,8 +196,8 @@ After all batches complete:
 ## Persist (mandatory)
 
 Write execution notes to disk:
-- Append batch summaries to: `artifacts/superpowers/execution-[topic].md`
-- Write final summary to: `artifacts/superpowers/finish-[topic].md`
+- Append batch summaries to: `artifacts/superpowers/[topic]-execution.md`
+- Write final summary to: `artifacts/superpowers/[topic]-finish.md`
 
 Ensure `artifacts/superpowers/` exists.
 Confirm files exist by listing `artifacts/superpowers/` when done.

@@ -7,8 +7,8 @@ description: Executes an approved plan in small steps with verification after ea
 ## Persist (mandatory)
 You must write execution artifacts to disk (not IDE-only documents):
 
-- Append execution notes to: `artifacts/superpowers/execution-[topic].md`
-- Write the final summary to: `artifacts/superpowers/finish-[topic].md`
+- Append execution notes to: `artifacts/superpowers/[topic]-execution.md`
+- Write the final summary to: `artifacts/superpowers/[topic]-finish.md`
 
 Requirements:
 1) Ensure the folder `artifacts/superpowers/` exists (create it if needed).
@@ -23,9 +23,9 @@ If you are unable to write these files directly, use `python .agent/skills/super
 ## Preconditions (do not skip)
 1) The user must have replied **APPROVED** to a written plan.
 2) The approved plan must exist on disk at:
-   - `artifacts/superpowers/plan-[iteration]-[topic].md`
+   - `artifacts/superpowers/[topic]-plan.md`
 
-If `artifacts/superpowers/plan-[iteration]-[topic].md` does not exist:
+If `artifacts/superpowers/[topic]-plan.md` does not exist:
 - Stop immediately.
 - Tell the user to run `/superpowers-write-plan` first.
 - Do not edit code.
@@ -33,7 +33,7 @@ If `artifacts/superpowers/plan-[iteration]-[topic].md` does not exist:
 [topic] must be the same with the plan's topic
 
 ## Load the plan
-- Read `artifacts/superpowers/plan.md`.
+- Read `artifacts/superpowers/[topic]-plan.md`.
 - Restate the plan briefly (1–2 lines) before making changes.
 
 ## Check for parallel execution opportunity (optional)
@@ -60,10 +60,10 @@ Read and apply these skills when relevant:
 1) Implement **ONE** plan step at a time.
 2) After each step:
    - Run the step’s verification command(s) (or, if you cannot run them, provide exact commands and expected outcomes).
-   - Append a short note to `artifacts/superpowers/execution.md` containing:
+   - Append a short note to `artifacts/superpowers/[topic]-execution.md` containing:
      - Step name
      - Files changed
-     - What changed (1–3 bullets)
+     - What changed (as detail as possible)
      - Verification command(s)
      - Result (pass/fail or “not run”)
 3) If verification fails:

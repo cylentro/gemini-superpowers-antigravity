@@ -42,6 +42,8 @@ These are commands you type in Antigravity:
 - `/superpowers-write-plan` - Create a detailed plan (no code yet!)
 - `/superpowers-execute-plan` - Build the code step-by-step
 - `/superpowers-execute-plan-parallel` - Build independent steps in parallel (faster!)
+- `/superpowers-push-to-git` - Build, verify, and push changes to Git with automated README updates
+- `/superpowers-reload` - Reload all workflows/rules
 - `/superpowers-review` - Check code quality
 - `/superpowers-debug` - Systematic debugging
 - `/superpowers-finish` - Final summary and documentation
@@ -682,6 +684,7 @@ APPROVED
 | `/superpowers-write-plan` | Create a detailed plan | Start of every task |
 | `/superpowers-execute-plan` | Build code step-by-step | After approving plan |
 | `/superpowers-execute-plan-parallel` | Build independent steps in parallel | When plan has 3+ independent steps |
+| `/superpowers-push-to-git` | Build, verify, and push to git | To deploy verified changes |
 | `/superpowers-review` | Check code quality | Before finishing, or when debugging |
 | `/superpowers-debug` | Systematic debugging | When something's broken |
 | `/superpowers-finish` | Create final summary | After everything works |

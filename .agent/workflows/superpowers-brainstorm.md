@@ -1,3 +1,7 @@
+---
+description: Superpowers brainstorm. Produces goal/constraints/risks/options/recommendation/acceptance criteria.
+---
+
 # Superpowers Brainstorm
 
 ## Task
@@ -25,7 +29,7 @@ After generating the brainstorm content, you MUST write it to disk using this ex
 5) Then immediately run:
 
 ```bash
-python .agent/skills/superpowers-workflow/scripts/write_artifact.py --path artifacts/superpowers/brainstorm-[topic].md
+python .agent/skills/superpowers-workflow/scripts/write_artifact.py --path artifacts/superpowers/[topic]-brainstorm.md
 
 ```
 
@@ -33,5 +37,5 @@ Provide the brainstorm markdown as stdin to the command.
 
 After writing, confirm it exists by listing artifacts/superpowers/.
 
-If you cannot run the command, say so explicitly and instruct the user to copy/paste the brainstorm output into artifacts/superpowers/brainstorm-[topic].md.
+If you cannot run the command, say so explicitly and instruct the user to copy/paste the brainstorm output into artifacts/superpowers/[topic]-brainstorm.md.
 Do not implement changes in this workflow. Stop after persistence.

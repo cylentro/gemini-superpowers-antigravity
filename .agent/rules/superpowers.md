@@ -1,3 +1,7 @@
+---
+trigger: always_on
+---
+
 # Superpowers Rules (Always-On)
 
 These rules apply to ALL work unless the user explicitly opts out.
